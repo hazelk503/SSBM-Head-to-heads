@@ -1,0 +1,136 @@
+html{
+	background-image: url(../images/melee-background.jpg);
+	background-size: cover;
+	color: white;
+}
+
+body{
+	margin: auto;
+	font-family: "A-OTF Folk Pro", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	padding: 2%;
+	
+}
+
+@font-face {
+	font-family: 'A-OTF Folk Pro';;
+	src: url(../fonts/A-OTF-Folk_Pro.otf);
+}
+
+nav{
+  text-align: center;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+
+nav a{
+text-decoration: none;
+font-size: 1em;
+padding: 2.5% 5% 2.5% 5%;
+margin: 1.4%;
+display: inline-block;
+border-style: solid;
+color: #ffcb00;
+}
+
+nav a:hover{
+background-color: #ffcb00;
+color: #040400;
+border-color: #ffcb00;
+}
+
+nav a.active{
+text-decoration: underline;
+}
+
+p{
+	text-indent: 2em;
+}
+
+h1{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2{
+	text-align: center;
+}
+
+p.left {
+	text-align: left;
+}
+
+main.form{
+	text-indent: 0;
+}
+
+label.left{
+  float: left;
+}
+
+a{
+  text-decoration: none;
+}
+
+table,
+th,
+td {
+  border: 0.15em solid #8ab4df;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: #03020b;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th,
+td {
+  padding: 1.0em;
+}
+
+td {
+  color: black
+}
+
+td.n-a {
+  background-color: gray;
+}
+
+td.no-record {
+  background-color: darkgray;
+}
+
+th {
+  font-weight: bold;
+  background-color: #7a5609;
+}
+
+th.vtop,
+td.vtop {
+  vertical-align: top;
+}
+
+th.vbottom,
+td.vbottom {
+  vertical-align: bottom;
+}
+
+.link{
+  font-size: 1em;
+  padding: 2.5% 5% 2.5% 5%;
+  margin: 1.4%;
+	border-style: solid;
+	color: #ffcb00;
+}
+
+.link:hover{
+  background-color: #ffcb00;
+	color: #040400;
+	border-color: #ffcb00;
+}
+
+footer{
+  color: darkgray
+}

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+
+        <table id="ranking-table">
+            <tr>
+                <th></th>
+                {% for p1 in players %}
+                    <th>{{p1}}</th>
+                {% endfor %}
+            </tr>
+            {% for p1 in players %}
+                <tr>
+                    <th>{{p1}}</th>
+                    {% set h2h_list = get_ordered_list(h2h_dict, p1) %}
+                    {% for p2 in players %}
+                        {% if p1 == p2 %}
+                            <td class="n-a">N/A</td>
+                        {% elif p2 in h2h_list %}
+                            <td class="record">{{h2h_dict[p1][p2]}}</td>
+                        {% else %}
+                            <td class="no-record">No Data</td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+
+{% endblock %}

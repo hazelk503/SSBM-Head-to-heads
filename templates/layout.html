@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Hazel Kirn">
+		<meta name="description" content="Display current season of SSBM head-to-heads for top players">
+        <title>{{ title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}" type="text/css"/>
+    </head>
+
+    <body onload="styleElements()">
+        <h1>Melee {{ current_season }} head-to-heads</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/top10">Top 10</a>
+            <a href="/top50">Top 50</a>
+            <a href="/major-winners">Major Winners</a>
+        </nav>
+        <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+        {% block content %}{% endblock %}
+    </body>
+    <footer>
+        Credit to Liquipedia for all data
+    </footer>
+</html>
